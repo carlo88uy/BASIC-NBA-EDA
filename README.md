@@ -25,6 +25,7 @@ Below is a summary of the main files and directories:
 
 | Path | Description |
 |------|-------------|
+| `Visualizations + Output/`| Results created after running either of the scripts within the 'scripts' folder|
 | `NBA 2023-2024 Dataset (Combined) V2 - Sheet1.csv` | Main dataset containing player and team statistics for the 2023–2024 NBA season. |
 | `scripts/` | Folder containing Python and/or R scripts used for processing, analysis, or visualization of the dataset. |
 | `LICENSE` | MIT License file. |
