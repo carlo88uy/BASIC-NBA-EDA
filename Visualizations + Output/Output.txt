@@ -1,0 +1,124 @@
+                3PA       BLK       PTS         W  Attend./G
+3PA        1.000000  0.059811  0.332366  0.119695  -0.139496
+BLK        0.059811  1.000000  0.333293  0.237157  -0.173469
+PTS        0.332366  0.333293  1.000000  0.612089  -0.022844
+W          0.119695  0.237157  0.612089  1.000000   0.321780
+Attend./G -0.139496 -0.173469 -0.022844  0.321780   1.000000
+             3PA        BLK         PTS          W     Attend./G
+count  30.000000  30.000000   30.000000  30.000000     30.000000
+mean   35.106667   5.146667  114.220000  41.000000  18329.700000
+std     2.880605   0.794695    4.254847  13.411266   1186.497806
+min    31.200000   3.400000  105.800000  14.000000  16449.000000
+25%    32.800000   4.600000  112.150000  31.250000  17478.750000
+50%    34.750000   5.000000  114.450000  46.500000  18182.500000
+75%    36.775000   5.825000  117.500000  49.000000  19363.000000
+max    42.500000   6.600000  123.300000  64.000000  20625.000000
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:              Attend./G   R-squared:                       0.240
+Model:                            OLS   Adj. R-squared:                  0.081
+Method:                 Least Squares   F-statistic:                     1.512
+Date:                Sun, 14 Dec 2025   Prob (F-statistic):              0.223
+Time:                        22:57:53   Log-Likelihood:                -250.31
+No. Observations:                  30   AIC:                             512.6
+Df Residuals:                      24   BIC:                             521.0
+Df Model:                           5
+Covariance Type:            nonrobust
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const               2.541e+04   7532.661      3.373      0.003    9859.391     4.1e+04
+3PA                  -43.9574     78.382     -0.561      0.580    -205.730     117.815
+BLK                 -304.8392    283.464     -1.075      0.293    -889.881     280.202
+PTS                  -52.5453     73.521     -0.715      0.482    -204.284      99.194
+W                     53.5184     22.969      2.330      0.029       6.113     100.924
+All-NBA Player_Yes  -361.7691    640.357     -0.565      0.577   -1683.402     959.864
+==============================================================================
+Omnibus:                        1.445   Durbin-Watson:                   2.003
+Prob(Omnibus):                  0.486   Jarque-Bera (JB):                1.038
+Skew:                           0.158   Prob(JB):                        0.595
+Kurtosis:                       2.145   Cond. No.                     4.60e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.6e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:         Q('Attend./G')   R-squared:                       0.268
+Model:                            OLS   Adj. R-squared:                  0.116
+Method:                 Least Squares   F-statistic:                     1.760
+Date:                Sun, 14 Dec 2025   Prob (F-statistic):              0.160
+Time:                        22:58:12   Log-Likelihood:                -249.74
+No. Observations:                  30   AIC:                             511.5
+Df Residuals:                      24   BIC:                             519.9
+Df Model:                           5
+Covariance Type:            nonrobust
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept     -4.153e+04   5.68e+04     -0.732      0.471   -1.59e+05    7.56e+04
+PTS             526.0088    502.961      1.046      0.306    -512.051    1564.069
+W              2887.9270   3012.425      0.959      0.347   -3329.413    9105.267
+I(W ** 2)       -25.4088     38.281     -0.664      0.513    -104.418      53.600
+PTS:W           -25.6596     26.350     -0.974      0.340     -80.043      28.723
+PTS:I(W ** 2)     0.2310      0.332      0.696      0.493      -0.454       0.916
+==============================================================================
+Omnibus:                        1.747   Durbin-Watson:                   2.101
+Prob(Omnibus):                  0.418   Jarque-Bera (JB):                1.342
+Skew:                           0.315   Prob(JB):                        0.511
+Kurtosis:                       2.178   Cond. No.                     6.83e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.83e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Shapiro-Wilk test: ShapiroResult(statistic=np.float64(0.973345732331664), pvalue=np.float64(0.6341476629830887))
+             Variable         VIF
+0                 3PA  176.199409
+1                 BLK   50.490517
+2                 PTS  263.621016
+3                   W   21.916144
+4  All-NBA Player_Yes    3.282747
+             Variable         VIF
+0                 3PA  176.199409
+1                 BLK   50.490517
+2                 PTS  263.621016
+3                   W   21.916144
+4  All-NBA Player_Yes    3.282747
+             Variable        VIF
+0                 3PA   1.130323
+1                 BLK  13.410664
+2                 PTS   1.838963
+3                   W  17.371920
+4  All-NBA Player_Yes   3.991165
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:         Q('Attend./G')   R-squared:                       0.104
+Model:                            OLS   Adj. R-squared:                  0.038
+Method:                 Least Squares   F-statistic:                     1.570
+Date:                Sun, 14 Dec 2025   Prob (F-statistic):              0.226
+Time:                        22:58:25   Log-Likelihood:                -252.77
+No. Observations:                  30   AIC:                             511.5
+Df Residuals:                      27   BIC:                             515.7
+Df Model:                           2
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   1.695e+04   1654.192     10.247      0.000    1.36e+04    2.03e+04
+W             41.6865     94.775      0.440      0.664    -152.777     236.150
+I(W ** 2)     -0.1776      1.255     -0.142      0.888      -2.752       2.397
+==============================================================================
+Omnibus:                        2.343   Durbin-Watson:                   2.141
+Prob(Omnibus):                  0.310   Jarque-Bera (JB):                1.304
+Skew:                           0.157   Prob(JB):                        0.521
+Kurtosis:                       2.028   Cond. No.                     1.64e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.64e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
