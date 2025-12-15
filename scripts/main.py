@@ -9,7 +9,7 @@ from scipy import stats
 # ==============================
 # Load and clean data
 # ==============================
-df = pd.read_csv("NBA 2023-2024 Dataset (Combined) V2 - Sheet1.csv")
+df = pd.read_csv("data/NBA 2023-2024 Dataset (Combined) V2 - Sheet1.csv")
 
 # Convert attendance per game into numeric
 df["Attend./G"] = df["Attend./G"].replace(",", "", regex=True).astype(float)
@@ -178,4 +178,5 @@ vif_data_std["VIF"] = [variance_inflation_factor(X_std_no_const.values, i)
 print(vif_data_std)
 
 final_model = smf.ols("Q('Attend./G') ~ W + I(W**2)", data=data).fit()
+
 print(final_model.summary())
