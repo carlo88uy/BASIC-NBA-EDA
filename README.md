@@ -8,7 +8,7 @@ This project performs **exploratory data analysis (EDA)** on NBA statistics to u
 
 The purpose of this project is to:
 - Explore NBA statistical data
-- Identify trends and distributions in performance metrics
+- Identify trends and distributions, using performance metrics
 - Practice structured exploratory data analysis
 - Build intuition for downstream modeling or statistical analysis
 
